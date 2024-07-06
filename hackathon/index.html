@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Attendance System</h1>
+        </header>
+        <div class="status-section">
+            <div id="dateTime"></div>
+            <div id="attendanceStatus"></div>
+        </div>
+        <main>
+            <div class="form-container">
+                <input type="text" id="nameInput" class="input-field" placeholder="Enter name">
+                <input type="text" id="classInput" class="input-field" placeholder="Enter class">
+                <input type="text" id="sectionInput" class="input-field" placeholder="Enter section">
+                <button onclick="markAttendance()">Mark Attendance</button>
+            </div>
+            <div class="attendance-container">
+                <h2>Attendance List</h2>
+                <ul id="attendanceItems">
+                    <!-- Attendance items will be dynamically added here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
